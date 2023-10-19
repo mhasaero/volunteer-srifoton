@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 /* header */
 header {
@@ -35,12 +36,24 @@ header .logo .logo-text {
 /* end logo */
 
 /* vektor header */
-header .header-background {
+header .header-background-pc {
   width: 58%;
   position: absolute;
   z-index: 0;
   top: 0;
   right: 0;
+}
+
+header .header-background-hp-1 {
+  display: none;
+}
+
+header .header-background-hp-2 {
+  display: none;
+}
+
+header .header-background-hp-3 {
+  display: none;
 }
 
 /* end vektor header */
@@ -91,11 +104,15 @@ header .orang1 {
 /* end orang 1 */
 
 /* orang 2 */
-header .orang2 {
-  width: 16%;
+header .orang2-pc {
+  width: 35%;
   position: absolute;
-  right: 15%;
-  top: 14%;
+  left: 66%;
+  top: 10%;
+}
+
+header .orang2-hp {
+  display: none;
 }
 /* end orang 2 */
 
@@ -175,6 +192,7 @@ header .orang2 {
   position: absolute;
   top: 110%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   z-index: -1;
@@ -182,6 +200,7 @@ header .orang2 {
 
 .content img {
   width: 44%;
+  margin-bottom: 0;
 }
 
 /* burung merah */
@@ -278,6 +297,7 @@ header .orang2 {
 }
 .Logo_Columns {
   margin-right: 5%;
+  width: 25%;
 }
 .Menus {
   display: flex;
@@ -406,9 +426,6 @@ header .orang2 {
 /* media screen */
 /* nest hub max */
 @media screen and (width: 1280px) and (height: 800px) {
-  body {
-    background-color: #fc39fc;
-  }
   .Hallo-Semua {
     font-size: 100%;
   }
@@ -427,7 +444,7 @@ header .orang2 {
 }
 
 /* nest hub */
-@media screen and (width: 1024px) and (height: 600px) {
+/* @media screen and (width: 1024px) and (height: 600px) {
   body {
     background-color: #fc39fc;
   }
@@ -446,29 +463,10 @@ header .orang2 {
   .©_SRIFOTON_2023 {
     left: 77%;
   }
-}
+} */
 
 /* samsung galaxy a51 */
-@media screen and (width: 667px) and (height: 375px) {
-  * {
-    background-color: #fc39fc;
-  }
-  .Hallo-Semua {
-    font-size: 50%;
-  }
-  .Orang-Tua {
-    bottom: 20%;
-  }
-  .container .SRIFOTON-2023 {
-    font-size: 60%;
-  }
-  .div-selamat-datang {
-    font-size: 70%;
-  }
-  .©_SRIFOTON_2023 {
-    left: 77%;
-  }
-}
+
 /* end media screen */
 @font-face {
   font-family: "Ethnocentric";

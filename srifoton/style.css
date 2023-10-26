@@ -2,7 +2,9 @@
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  text-decoration: none;
 }
+
 /* header */
 header {
   width: 100%;
@@ -42,6 +44,10 @@ header .header-background-pc {
   z-index: 0;
   top: 0;
   right: 0;
+}
+
+header .header-button-wrap a {
+  color: #2a89f8;
 }
 
 header .header-background-hp-1 {
@@ -166,6 +172,11 @@ header .orang2-hp {
   width: 35%;
   text-align: justify;
 }
+
+.Orang-Tua-button a {
+  color: white;
+}
+
 .Orang-Tua-button {
   width: 10vmax;
   height: 3.5vmax;
